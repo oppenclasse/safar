@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safar</title>
+    <title>Voyage Safar</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-<h1>welcome</h1>
-    
+    <header>
+        <h1>Bienvenue sur Safar</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="accueil">
+        <h2>Découvrez la beauté du voyage</h2>
+        <p>Explorez les destinations les plus incroyables et les cultures fascinantes à travers notre site.</p>
+    </section>
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/images/An image representing online presence and exploring new digital horizons. The image should feature elements such as a laptop and smartphone showing in.webp" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="assets/images/An image that combines elements of marketing with a poetic touch. It should feature symbols of marketing such as a megaphone, bar graphs, and a laptop.webp" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="assets/images/modern and minimalistic image that suggests web design. It features elements like abstract shapes, color palettes, wireframes, and design tools such.webp" alt="Image 3"></div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Safar. Tous droits réservés.</p>
+    </footer>
+    <script src="assets/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
